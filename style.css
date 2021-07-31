@@ -1,1 +1,30 @@
 /* você pode estilizar se quiser !!! */
+body,html,p,h1{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: lightblue;
+}
+body{
+    background-color: white;
+    width: 800px;
+    padding-top: 10px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.37);
+}
+h1{
+    font-size: 22px;
+    margin: 10px 0 10px 20px;
+}
+p{
+    margin: 0 0 10px 20px;
+}
+div{
+    border-bottom: 2px solid black;
+}
+.result{
+    font-size: 15px;
+    color: rgb(41, 40, 40);
+}
