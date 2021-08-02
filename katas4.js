@@ -66,7 +66,7 @@ function kata6(arr) {
 }
 
 function kata7(arr) {
-    let arrCity = [arr[2],arr[4]]
+    let arrCity = arr.slice(2,5)
     criaElemento('body','div','div7')
     criaElemento('.div7','h1','titulo kata7','kata7')
     criaElemento('.div7','p','result',arrCity)
@@ -198,15 +198,15 @@ function kata23(arr) {
     let word = arr.split(',')
 
     word.forEach(palavra=>{
-        let vogais = palavra.replace(/[^aeiou]/g,'').split('').sort().join('')
-
-        for(let index = 0; index<vogais.length; index++){
+        let vogais = palavra.replace(/[^aeiou]/g,'').split('').join('')
+        console.log(vogais)
+         for(let index = 0; index<vogais.length; index++){
             let letra = vogais[index]
             if(letra === vogais[index+1]){
                 result.push(palavra) 
                 break
             }
-        }
+        } 
     })
     criaElemento('body','div','div23')
     criaElemento('.div23','h1','titulo kata23','Bonus kata23')
